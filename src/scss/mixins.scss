@@ -1,0 +1,86 @@
+@mixin mobile-font-size {
+    @media (max-width: 320px) {
+        @content;
+    }
+}
+
+@mixin flex-wrap {
+    @media (max-width: 320px) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@mixin block-styles {
+    width: 200px;
+    height: 200px;
+    min-width: 0;
+}
+
+@mixin medium-desktop {
+    @media (max-width: 1440px) {
+        width: calc(100% - 60px);
+    }
+}
+
+@mixin small-desktop {
+    @media (max-width: 1440px) {
+        width: calc(100% - 50px);
+    }
+}
+
+@mixin small-desktop-min {
+    @media (width: calc(100% - 40px)) {
+        width: calc(100% - 50px);
+    }
+}
+
+@mixin small-desktop {
+    @media (width: calc(100% - 100px)) {
+        width: calc(100% - 100px);
+    }
+}
+
+@mixin small-desktop {
+    @media (width: calc(100% - 40px)) {
+        width: calc(100% - 40px);
+    }
+}
+
+@mixin mobile {
+    @media (width: calc(100% - 40px)) {
+        width: calc(100% - 40px);
+    }
+}
+
+// .container {
+//     width: 100%;
+//     margin: 0 auto;
+//     max-width: 1440px;
+//     display: flex;
+//     min-width: 0;
+
+//     @include medium-desktop {
+//         width: calc(100% - 60px);
+//     }
+
+//     @include small-desktop {
+//         width: calc(100% - 50px);
+//     }
+
+//     @include small-desktop-min {
+//         width: calc(100% - 40px);
+//     }
+
+//     @include small-desktop {
+//         width: calc(100% - 100px);
+//     }
+
+//     @include small-desktop {
+//         width: calc(100% - 40px);
+//     }
+
+//     @include mobile {
+//         width: calc(100% - 40px);
+//     }
+// }

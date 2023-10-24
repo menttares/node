@@ -1,0 +1,15 @@
+.header {
+  background-color: red;
+  max-width: 1200px;
+}
+
+.footer {
+  background-color: blue;
+  max-width: 1200px;
+}
+
+.main {
+  max-width: 1200px;
+}
+
+/*# sourceMappingURL=style.css.map */

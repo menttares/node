@@ -1,0 +1,48 @@
+// styles.scss
+
+// Обнуление стилей для всех элементов
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// Обнуление стилей для текста и шрифтов
+body, p, h1, h2, h3, h4, h5, h6 {
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+}
+
+// Обнуление стилей для ссылок
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+// Обнуление стилей для списков
+ul, ol {
+    list-style: none;
+}
+
+// Обнуление стилей для изображений
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+// Обнуление стилей для форм и полей ввода
+input, textarea, button, select {
+    border: none;
+    outline: none;
+    font-family: inherit;
+}
+
+// Обнуление стилей для кнопок
+button {
+    cursor: pointer;
+    background: none;
+    padding: 0;
+    border: none;
+}
+
+// Добавьте другие стили обнуления по вашему усмотрению
