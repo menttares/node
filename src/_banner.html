@@ -1,0 +1,44 @@
+<!-- Подключаем стили Swiper -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+
+<!-- HTML-код для контейнера баннера и кнопок навигации -->
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <div class="banner">
+                <img src="img/banner1.jpg" class="banner__image">
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="banner">
+                <img src="img/banner2.jpg" class="banner__image">
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="banner">
+                <img src="img/banner3.jpg" class="banner__image">
+            </div>
+        </div>
+        <!-- Добавьте сколько угодно слайдов -->
+    </div>
+    <!-- Если вам нужны кнопки навигации -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+</div>
+
+
+<!-- Подключаем скрипт Swiper -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+<script>
+    var mySwiper = new Swiper('.swiper-container', {
+        // Опции Swiper
+        loop: true, // Делаем бесконечное перелистывание
+        navigation: {
+            nextEl: '.swiper-button-next', // Кнопка "Вперед"
+            prevEl: '.swiper-button-prev' // Кнопка "Назад"
+        },
+    });
+</script>
